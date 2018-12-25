@@ -56,7 +56,7 @@ public class DummyProducer {
         props.put("buffer.memory", 33554432);
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-      //  props.put("api_version","0.9");
+
         producer = new KafkaProducer<>(props);
        // producer = KafkaProducer(api_version="0.9");
     }
